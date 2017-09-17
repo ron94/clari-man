@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "Openu-login",
   "version": "1.0",
-  "description": "Enables Automatic login for the Israeli Open University students.",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "description": "Enables auto-login for the Open University of Israel students.",
+  "homepage_url": "https://github.com/ron94/openu-login",
   "icons": {
     "48": "icons/openu-48.png"
   },
@@ -11,8 +11,7 @@
     "page": "settings/credentials.html"
   },
   "permissions": [
-    "storage",
-    "activeTab"
+    "storage"
   ],
   "content_scripts": [
     {
