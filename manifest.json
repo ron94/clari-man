@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Openu-login",
+  "version": "1.0",
+  "description": "Enables Automatic login for the Israeli Open University students.",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "icons": {
+    "48": "icons/openu-48.png"
+  },
+  "options_ui": {
+    "page": "settings/credentials.html"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sso.apps.openu.ac.il/*"
+      ],
+      "js": [
+        "content_scripts/login.js"
+      ]
+    }
+  ]
+}

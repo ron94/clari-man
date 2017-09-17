@@ -1,0 +1,262 @@
+﻿body{
+	background: transparent;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensanshebrew-regular-webfont.eot') format('embedded-opentype'), url('../fonts/opensanshebrew-regular-webfont.woff') format('woff'), url('../fonts/opensanshebrew-regular-webfont.ttf') format('truetype'), url('../fonts/opensanshebrew-regular-webfont.svg') format('svg');
+}
+
+.bg-picture {
+	background-image:url(../images/login-join-pic.jpg);
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+@media (min-width: 768px) {
+	.bg-picture {
+		min-height:700px;
+	}
+}
+@media (max-width: 767px) {
+	.bg-picture {
+		min-height:260px;
+		background-size: 600px 400px;
+	}
+}
+h1, h4, h6 {
+	font-family: 'Open Sans';
+	color:#e5e5e5;
+	position:absolute;
+}
+h1 {
+	font-weight:bold;
+}
+@media (min-width: 1070px) {
+	h1 {
+		font-size: 68px;
+    	top: 333px;
+    	left: 404px;
+	}
+	h4 {
+		font-size: 33px;
+    	top: 433px;
+    	left: 408px;
+    	letter-spacing: 2.8px;
+	}
+	h6 {
+		font-size: 24px;
+    	top: 496px;
+    	left: 495px;
+	}
+}
+@media (max-width: 1069px) {
+	h1 {
+		font-size: 49px;
+		top: 333px;
+    	left: 404px;
+	}
+	h4 {
+		font-size: 22px;
+		top: 433px;
+    	left: 408px;
+    	letter-spacing: 2.8px;
+	}
+	h6 {
+		font-size: 24px;
+    	top: 496px;
+    	left: 495px;
+	}
+}
+/*@media (max-width: 767px) {
+	h1 {
+		top: 118px;
+    	left: 105px;
+	}
+}*/
+.sheilta-slogan {
+	max-width:280px;
+	margin-top:30px;
+}
+.sheilta-slogan p {
+	font-family: 'Open Sans';
+	font-size:28px;
+	color:#2F2E2E;
+}
+.sheilta-slogan p span {
+	color:#1383BF;
+	font-weight:bold;
+}
+@media (min-width: 768px) {
+	.sheilta-login {
+		max-width:280px;
+	}
+}
+@media (max-width: 767px) {
+	.sheilta-login {
+    	margin-left: auto;
+    	margin-right: auto;
+		max-width:80%;
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+}
+.sheilta-login button {
+	border-color: transparent;
+	border-style:none;
+	font-size: 15px;
+	font-weight:bold;
+	color: #ffffff;
+	background: -moz-linear-gradient(top, #2396d4, #0875b0);
+	background: -webkit-linear-gradient(top, #2396d4, #0875b0);
+	background: linear-gradient(top, #2396d4, #0875b0);
+	background: -ms-linear-gradient(top, #2396d4, #0875b0);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#2396d4, endColorstr=#0875b0, GradientType=1);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#2396d4, endColorstr=#0875b0, GradientType=1)";
+	box-shadow: 1px 1px 0 rgba(0,0,0,.05);
+}
+.sheilta-login button:hover, .sheilta-login button:focus {
+	color: #ffffff;
+	background: -moz-linear-gradient(top,#1992d4,#006aa3);
+    background: -webkit-linear-gradient(top,#1992d4,#006aa3);
+    background: linear-gradient(top,#1992d4,#006aa3);
+    background: -ms-linear-gradient(top,#1992d4,#006aa3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#1992d4,endColorstr=#006aa3,GradientType=1);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#1992d4,endColorstr=#006aa3,GradientType=1)";
+    box-shadow: 1px 1px 0 rgba(0,0,0,.1);
+    transition-property:background;
+}
+.sheilta-login legend {
+	color:#1383BF;
+}
+@media (max-width: 767px) {
+	.sheilta-login label {
+		margin-bottom:0;
+	}
+}
+/*Disable Input Number Field Arrows*/
+/*.sheilta-login input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.sheilta-login input[type=number]::-webkit-inner-spin-button,
+.sheilta-login input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}*/
+/*---*/
+.sheilta-login .links {
+	margin-top:10px;
+}
+@media (max-width: 320px) {
+	.sheilta-login .links a {
+		font-size:88%;
+	}
+}
+
+@media (min-width: 768px) {
+	.button-quick-join.inMyOp {
+		max-width:280px;
+	}
+}
+.button-quick-join a.btn {
+	font-family: 'Open Sans';
+	font-size:20px;
+	background-color: rgba(232, 221, 2, 1);
+    border: solid rgba(146, 146, 44, 1) 0px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+	color:#000;
+	transition: color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+.button-quick-join a.btn:hover, .button-quick-join a.btn:focus {
+    background-color: rgba(19, 131, 191, 1);
+	color:#FFF;
+}
+@media screen and (max-width: 1069px) and (min-width: 768px) {
+    .button-quick-join.outMyOp a.btn {font-size:17px;}
+}
+.bg-picture p {
+	font-family: 'Open Sans';
+	font-size:28px;
+	position:absolute;
+	color:#FFCC33;
+}
+@media (min-width: 768px) {
+	.button-quick-join.outMyOp a.btn {
+		position:absolute;
+		top: 578px;
+    	left: 511px;
+	}
+	.bg-picture p {
+		top: 580px;
+    	left: 528px;
+	}
+}
+@media (max-width: 767px) {
+	.button-quick-join.inMyOp a.btn {
+    	font-size: 15px;
+		margin-top:5px;
+		margin-bottom:30px;
+	}
+	.bg-picture p {
+	    top: 200px;
+    	left: 164px;
+		font-size: 20px;
+	}
+}
+.bg-gray {
+	background-color:#F2F4F7;
+}
+.bg-gray p {
+	font-family: 'Open Sans';
+	font-size:28px;
+	margin-top:15px;
+	color:#14499E;
+}
+.bg-gray img {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+@media (max-width: 767px) {
+	.bg-gray p {
+		font-size:20px;
+		margin-top:32px;
+	}
+}
+
+ul.links {
+	margin-bottom:0;
+}
+@media (min-width: 768px) {
+	ul.links {
+		margin-top:25px;
+	}
+}
+@media (max-width: 767px) {
+	ul.links {
+		margin-top:10px;
+	}
+}
+ul.links li {
+	font-family: 'Open Sans';
+	border-left:#999 1px solid;
+}
+ul.links li:last-child {
+	border-left:none;
+}
+@media (max-width: 320px) {
+	ul.links a {
+		font-size:88%;
+	}
+}
+
+.lockout {
+	max-width:280px;
+}
+.lockout p {
+	font-family: 'Open Sans';
+	font-size:20px;
+	color:#FF0000;
+}
+#divCapsLock {
+	color:#C00;
+}
